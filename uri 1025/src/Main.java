@@ -27,10 +27,9 @@ public class Main{
 			}
 			Arrays.parallelSort(Canicas);
 			for (int j = 0; j < Q; j++) {
-				if(j==0)NQ=in.readLine().split(" ");
-				 N=Integer.parseInt(NQ[0]);
-				 Q =Integer.parseInt(NQ[1]);
+				if(j==0) {
 				System.out.println("CASE# "+i+":");
+				}
 				int pregunta=Integer.parseInt(in.readLine());
 				int index=Arrays.binarySearch(Canicas,pregunta);
 				if(index<0) {
